@@ -1,0 +1,46 @@
+.otpusk-button {
+    background: #ffffff;
+    color: #5abc29;
+    border: none;
+    font-size: 22px;
+    outline: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 64px;
+
+    &:before,
+    &:after {
+        content: '';
+        background: #fff;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+
+    &:before {
+        left: -32px;
+    }
+
+    &:after {
+        right: -32px;
+    }
+
+    &_green {
+        color: #fff;
+        background: #5abc29;
+
+        &:before,
+        &:after {
+            background: #5abc29;
+        }
+    }
+
+    &__text {
+        z-index: 2;
+        position: relative;
+    }
+}

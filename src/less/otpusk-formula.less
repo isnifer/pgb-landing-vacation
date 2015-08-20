@@ -1,0 +1,117 @@
+.otpusk-formula {
+    .clearfix();
+    margin-top: 50px;
+    position: relative;
+
+    &_big {
+        margin-bottom: 80px;
+    }
+
+    &__result,
+    &__symbol,
+    &__text {
+        float: left;
+    }
+
+    &__result {
+        font-weight: 600;
+        color: #000000;
+    }
+
+    &__symbol {
+        font-size: 32px;
+        color: #f0082a;
+        padding: 0 25px;
+        line-height: 2.1;
+
+        &_small {
+            padding: 0 15px;
+            line-height: 2.5;
+        }
+
+        &_wide {
+            padding-right: 30px;
+        }
+    }
+
+    &__text {
+        color: #7d7d7d;
+        font-size: 16px;
+        line-height: 20/16;
+        font-weight: 300;
+
+        &_high {
+            line-height: 4;
+        }
+
+        &_number {
+            font-size: 24px;
+            line-height: 3.2;
+        }
+    }
+
+    &__vertical {
+        width: 1px;
+        height: 47px;
+        background: #e1e1e1;
+        position: absolute;
+        top: 55px;
+        left: 175px;
+    }
+
+    &__average-days {
+        color: #898989;
+        font-size: 12px;
+        font-weight: 300;
+        display: block;
+        position: absolute;
+        top: 105px;
+        left: 155px;
+    }
+
+    &__horizontal {
+        border: 1px solid #e1e1e1;
+        border-top: transparent;
+        width: 453px;
+        height: 7px;
+        position: absolute;
+        right: 20px;
+        top: 90px;
+
+        &:after {
+            content: '';
+            width: 1px;
+            height: 15px;
+            background: #e1e1e1;
+            position: absolute;
+            left: 50%;
+            bottom: -15px;
+        }
+    }
+
+    &__repeat {
+        color: #ed1f24;
+        font-size: 12px;
+        display: block;
+        position: absolute;
+        top: 120px;
+        right: 140px;
+        text-align: center;
+    }
+
+    &__bracket {
+        display: block;
+        width: 14px;
+        height: 94px;
+        background: url(./img/otpusk-formula/brackets.png) no-repeat 0 0;
+        position: absolute;
+        top: -7px;
+        right: 365px;
+        opacity: .3;
+
+        &_right {
+            background-position: -14px 0;
+            right: 20px;
+        }
+    }
+}
