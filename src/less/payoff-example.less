@@ -1,4 +1,4 @@
-.otpusk-example {
+.payoff-example {
     .clearfix();
     margin-bottom: 85px;
     color: #7d7d7d;
@@ -20,10 +20,13 @@
     }
 
     &__content {
-        border-left: 1px solid #ed1f24;
-        padding-left: 40px;
         float: left;
         width: 912px;
+    }
+
+    &__red-wrapper {
+        border-left: 1px solid #ed1f24;
+        padding-left: 40px;
     }
 
     &__title {
@@ -37,5 +40,19 @@
         font-size: 16px;
         line-height: 20/16;
         margin-top: 50px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    &__example {
+        display: none;
+        margin-top: 25px;
+        padding-left: 41px;
+        font-size: 16px;
+        line-height: 20/16;
+
+        &_visible {
+            display: block;
+        }
     }
 }
