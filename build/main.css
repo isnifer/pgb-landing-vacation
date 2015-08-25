@@ -110,6 +110,28 @@ body {
 .payoff-example__example_visible {
   display: block;
 }
+.payoff-example__mark {
+  color: #000;
+}
+.payoff-example__formula {
+  font-size: 28px;
+  line-height: 1;
+  color: #000;
+  margin-top: 15px;
+}
+.payoff-example__item {
+  display: inline-block;
+  vertical-align: top;
+}
+.payoff-example__value {
+  display: block;
+}
+.payoff-example__month {
+  font-size: 14px;
+  text-align: center;
+  color: #555f64;
+  display: block;
+}
 .payoff-formula {
   margin-top: 50px;
   position: relative;
