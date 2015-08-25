@@ -2,263 +2,321 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1200, initial-scale=1">
+    <meta name="viewport" content="width=1200, initial-scale=0">
     <meta name="format-detection" content="telephone=no" />
     <title>Главбух</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
     <link rel="stylesheet" href="build/main.css" />
 </head>
 <body>
-    <div class="otpusk-page">
+    <div class="payoff-page">
 
         <!-- Шапка -->
-        <div class="otpusk-header">
-            <div class="otpusk-wrapper">
-                <div class="otpusk-header__logo">
-                    <span class="otpusk-header__title">
+        <div class="payoff-header">
+            <div class="payoff-wrapper">
+                <div class="payoff-header__logo">
+                    <span class="payoff-header__title">
                         Расчет и оформление <br>
                         выплат сотрудникам
                     </span>
                 </div>
-                <div class="otpusk-header__question">
+                <div class="payoff-header__question">
                     Как рассчитать компенсацию <br>
                     за неиспользованный отпуск <br>
                     при увольнении сотрудника?
                 </div>
-                <div class="otpusk-header__description">
+                <div class="payoff-header__description">
                     Пошаговый алгоритм расчета с формулой и примерами. <br>
                     Бесплатный калькулятор для самопроверки.
                 </div>
-                <i class="otpusk-header__scroll"></i>
+                <i class="payoff-header__scroll"></i>
             </div>
         </div>
 
         <!-- Примеры -->
-        <div class="otpusk-wrapper">
-            <div class="otpusk-example">
-                <div class="otpusk-example__number">1</div>
-                <div class="otpusk-example__content">
-                    <div class="otpusk-example__title">Рассчитайте дни неиспользованного отпуска</div>
-                    <div class="otpusk-formula">
-                        <div class="otpusk-formula__result">
-                            Количество <br>
-                            неиспользованных <br>
-                            дней отпуска
+        <div class="payoff-wrapper">
+            <div class="payoff-example">
+                <div class="payoff-example__number">1</div>
+                <div class="payoff-example__content">
+                    <div class="payoff-example__red-wrapper">
+                        <div class="payoff-example__title">Рассчитайте дни неиспользованного отпуска</div>
+                        <div class="payoff-formula">
+                            <div class="payoff-formula__result">
+                                Количество <br>
+                                неиспользованных <br>
+                                дней отпуска
+                            </div>
+                            <div class="payoff-formula__symbol">=</div>
+                            <div class="payoff-formula__text">
+                                Продолжительность <br>
+                                полного ежегодного <br>
+                                отпуска (28 дней)
+                            </div>
+                            <div class="payoff-formula__symbol">÷</div>
+                            <div class="payoff-formula__text payoff-formula__text_high">
+                                12 мес
+                            </div>
+                            <div class="payoff-formula__symbol">×</div>
+                            <div class="payoff-formula__text">
+                                Количество <br>
+                                отработанных <br>
+                                месяцев
+                            </div>
+                            <div class="payoff-formula__symbol">—</div>
+                            <div class="payoff-formula__text">
+                                Количество <br>
+                                использованных <br>
+                                дней отпуска
+                            </div>
                         </div>
-                        <div class="otpusk-formula__symbol">=</div>
-                        <div class="otpusk-formula__text">
-                            Продолжительность <br>
-                            полного ежегодного <br>
-                            отпуска (28 дней)
-                        </div>
-                        <div class="otpusk-formula__symbol">÷</div>
-                        <div class="otpusk-formula__text otpusk-formula__text_high">
-                            12 мес
-                        </div>
-                        <div class="otpusk-formula__symbol">×</div>
-                        <div class="otpusk-formula__text">
-                            Количество <br>
-                            отработанных <br>
-                            месяцев
-                        </div>
-                        <div class="otpusk-formula__symbol">—</div>
-                        <div class="otpusk-formula__text">
-                            Количество <br>
-                            использованных <br>
-                            дней отпуска
-                        </div>
+                        <div class="payoff-example__view">Посмотреть пример</div>
                     </div>
-                    <div class="otpusk-example__view">Посмотреть пример</div>
-                </div>
-            </div>
-            <div class="otpusk-example">
-                <div class="otpusk-example__number">2</div>
-                <div class="otpusk-example__content">
-                    <div class="otpusk-example__title">Определите расчетный период</div>
-                    <div class="otpusk-example__text">
-                        Чаще всего — это 12 месяцев, предшествующих месяцу отпуска. Если сотрудник проработал меньше года, расчетный <br>
-                        период — с первого дня работы до последнего дня месяца перед увольнением.
+                    <div class="payoff-example__example">
+                        Работник устроился 12&nbsp;января 2015&nbsp;года, а&nbsp;его последний день работы&nbsp;&mdash; 29&nbsp;мая. По&nbsp;факту сотрудник заработал 11,67 дней отпуска (28&nbsp;дн. : 12&nbsp;мес. x&nbsp;5&nbsp;мес.). Четыре полных месяца&nbsp;&mdash; с&nbsp;12&nbsp;января по&nbsp;11&nbsp;мая и&nbsp;пятый&nbsp;&mdash; май. Май засчитываем за&nbsp;целый месяц, т.к. с&nbsp;12&nbsp;по&nbsp;29&nbsp;мая отработано 18&nbsp;дней, больше половины месяца. <br><br>
+                        Работодатель решил округлить 11,67 дней до&nbsp;12&nbsp;дней.
                     </div>
                 </div>
             </div>
-            <div class="otpusk-example">
-                <div class="otpusk-example__number">3</div>
-                <div class="otpusk-example__content">
-                    <div class="otpusk-example__title">Рассчитайте заработок за расчетный период</div>
-                    <div class="otpusk-example__text">
-                        Сложите суммы всех начислений, которые предусмотрены системой оплаты труда в компании: <br>
-                        зарплата, надбавки, доплаты, трудовые премии. Не берите в расчет материальную помощь, <br>
-                        денежные подарки к праздникам и т. п.
+            <div class="payoff-example">
+                <div class="payoff-example__number">2</div>
+                <div class="payoff-example__content">
+                    <div class="payoff-example__red-wrapper">
+                        <div class="payoff-example__title">Определите расчетный период</div>
+                        <div class="payoff-example__text">
+                            Чаще всего — это 12 месяцев, предшествующих месяцу отпуска. Если сотрудник проработал меньше
+                            года, расчетный <br>
+                            период — с первого дня работы до последнего дня месяца перед увольнением.
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="otpusk-example">
-                <div class="otpusk-example__number">4</div>
-                <div class="otpusk-example__content">
-                    <div class="otpusk-example__title">Определите расчетное количество календарных дней</div>
-                    <div class="otpusk-formula otpusk-formula_big">
-                        <i class="otpusk-formula__vertical"></i>
-                        <span class="otpusk-formula__average-days">
-                            Cреднее количество календарных дней
-                        </span>
-                        <i class="otpusk-formula__horizontal"></i>
-                        <span class="otpusk-formula__repeat">
-                            Повторить для всех месяцев, которые <br>
-                            отработаны не полностью
-                        </span>
-                        <i class="otpusk-formula__bracket"></i>
-                        <i class="otpusk-formula__bracket otpusk-formula__bracket_right"></i>
-                        <div class="otpusk-formula__result">
-                            Расчетное <br>
-                            количество <br>
-                            календарных <br>
-                            дней
-                        </div>
-                        <div class="otpusk-formula__symbol otpusk-formula__symbol_small">=</div>
-                        <div class="otpusk-formula__text otpusk-formula__text_number">
-                            29,3
-                        </div>
-                        <div class="otpusk-formula__symbol otpusk-formula__symbol_small">×</div>
-                        <div class="otpusk-formula__text">
-                            Месяцы в расчетном <br>
-                            периоде, которые <br>
-                            отработаны <br>
-                            полностью
-                        </div>
-                        <div class="otpusk-formula__symbol otpusk-formula__symbol_small">+</div>
-                        <div class="otpusk-formula__text otpusk-formula__text_number">
-                            29,3
-                        </div>
-                        <div class="otpusk-formula__symbol otpusk-formula__symbol_small otpusk-formula__symbol_wide">
-                            ÷
-                        </div>
-                        <div class="otpusk-formula__text">
-                            Календарные дни <br>
-                            в месяце, который <br>
-                            отработан <br>
-                            не полностью
-                        </div>
-                        <div class="otpusk-formula__symbol otpusk-formula__symbol_small">×</div>
-                        <div class="otpusk-formula__text">
-                            Отработанные дни <br>
-                            в месяце, который <br>
-                            отработан <br>
-                            не полностью
+            <div class="payoff-example">
+                <div class="payoff-example__number">3</div>
+                <div class="payoff-example__content">
+                    <div class="payoff-example__red-wrapper">
+                        <div class="payoff-example__title">Рассчитайте заработок за расчетный период</div>
+                        <div class="payoff-example__text">
+                            Сложите суммы всех начислений, которые предусмотрены системой оплаты труда в компании: <br>
+                            зарплата, надбавки, доплаты, трудовые премии. Не берите в расчет материальную помощь, <br>
+                            денежные подарки к праздникам и т. п.
                         </div>
                     </div>
-                    <div class="otpusk-example__view">Посмотреть пример</div>
                 </div>
             </div>
-            <div class="otpusk-example">
-                <div class="otpusk-example__number">5</div>
-                <div class="otpusk-example__content">
-                    <div class="otpusk-example__title">Сумма компенсации</div>
-                    <div class="otpusk-formula">
-                        <div class="otpusk-formula__result">
-                            Компенсация за <br>
-                            неиспользованный <br>
-                            отпуск
+            <div class="payoff-example">
+                <div class="payoff-example__number">4</div>
+                <div class="payoff-example__content">
+                    <div class="payoff-example__red-wrapper">
+                        <div class="payoff-example__title">Определите расчетное количество календарных дней</div>
+                        <div class="payoff-formula payoff-formula_big">
+                            <i class="payoff-formula__vertical"></i>
+                            <span class="payoff-formula__average-days">
+                                Cреднее количество календарных дней
+                            </span>
+                            <i class="payoff-formula__horizontal"></i>
+                            <span class="payoff-formula__repeat">
+                                Повторить для всех месяцев, которые <br>
+                                отработаны не полностью
+                            </span>
+                            <i class="payoff-formula__bracket"></i>
+                            <i class="payoff-formula__bracket payoff-formula__bracket_right"></i>
+                            <div class="payoff-formula__result">
+                                Расчетное <br>
+                                количество <br>
+                                календарных <br>
+                                дней
+                            </div>
+                            <div class="payoff-formula__symbol payoff-formula__symbol_small">=</div>
+                            <div class="payoff-formula__text payoff-formula__text_number">
+                                29,3
+                            </div>
+                            <div class="payoff-formula__symbol payoff-formula__symbol_small">×</div>
+                            <div class="payoff-formula__text">
+                                Месяцы в расчетном <br>
+                                периоде, которые <br>
+                                отработаны <br>
+                                полностью
+                            </div>
+                            <div class="payoff-formula__symbol payoff-formula__symbol_small">+</div>
+                            <div class="payoff-formula__text payoff-formula__text_number">
+                                29,3
+                            </div>
+                            <div class="payoff-formula__symbol payoff-formula__symbol_small payoff-formula__symbol_wide">
+                                ÷
+                            </div>
+                            <div class="payoff-formula__text">
+                                Календарные дни <br>
+                                в месяце, который <br>
+                                отработан <br>
+                                не полностью
+                            </div>
+                            <div class="payoff-formula__symbol payoff-formula__symbol_small">×</div>
+                            <div class="payoff-formula__text">
+                                Отработанные дни <br>
+                                в месяце, который <br>
+                                отработан <br>
+                                не полностью
+                            </div>
                         </div>
-                        <div class="otpusk-formula__symbol">=</div>
-                        <div class="otpusk-formula__text">
-                            Заработок <br>
-                            за расчетный <br>
-                            период
-                        </div>
-                        <div class="otpusk-formula__symbol">÷</div>
-                        <div class="otpusk-formula__text">
-                            Расчетное <br>
-                            количество <br>
-                            календарных дней
-                        </div>
-                        <div class="otpusk-formula__symbol">×</div>
-                        <div class="otpusk-formula__text">
-                            Количество <br>
-                            неиспользованных <br>
-                            дней отпуска
+                        <div class="payoff-example__view">Посмотреть пример</div>
+                    </div>
+                    <div class="payoff-example__example">
+                        Сотрудник устроился на&nbsp;работу 12&nbsp;января 2015&nbsp;года, 23&nbsp;марта
+                        уходит на&nbsp;работу в&nbsp;отпуск на&nbsp;четыре дня. 26&ndash;27 января
+                        ездил в&nbsp;командировку, а&nbsp;с&nbsp;28&nbsp;января по&nbsp;3&nbsp;февраля болел. <br><br>
+                        Расчетный период&nbsp;&mdash; с&nbsp;12&nbsp;января по&nbsp;28&nbsp;февраля.
+                        Январь и&nbsp;февраль отработаны не&nbsp;полностью.
+                        Расчетное количество календарных дней за&nbsp;фактически отработанный период:
+                        <div class="payoff-example__formula">
+                            <span class="payoff-example__item">
+                                <span class="payoff-example__value">39,3929 = 29,3&#8201;×&#8201;0</span>
+                            </span> +
+                            <span class="payoff-example__item">
+                                <span class="payoff-example__value">29,3&#8201;÷&#8201;31&#8201;×&#8201;14</span>
+                                <span class="payoff-example__month">Январь</span>
+                            </span> +
+                            <span class="payoff-example__item">
+                                <span class="payoff-example__value">29,3&#8201;÷&#8201;28&#8201;×&#8201;25</span>
+                                <span class="payoff-example__month">Февраль</span>
+                            </span>
                         </div>
                     </div>
-                    <div class="otpusk-example__view">Посмотреть пример</div>
+                </div>
+            </div>
+            <div class="payoff-example">
+                <div class="payoff-example__number">5</div>
+                <div class="payoff-example__content">
+                    <div class="payoff-example__red-wrapper">
+                        <div class="payoff-example__title">Сумма компенсации</div>
+                        <div class="payoff-formula">
+                            <div class="payoff-formula__result">
+                                Компенсация за <br>
+                                неиспользованный <br>
+                                отпуск
+                            </div>
+                            <div class="payoff-formula__symbol">=</div>
+                            <div class="payoff-formula__text">
+                                Заработок <br>
+                                за расчетный <br>
+                                период
+                            </div>
+                            <div class="payoff-formula__symbol">÷</div>
+                            <div class="payoff-formula__text">
+                                Расчетное <br>
+                                количество <br>
+                                календарных дней
+                            </div>
+                            <div class="payoff-formula__symbol">×</div>
+                            <div class="payoff-formula__text">
+                                Количество <br>
+                                неиспользованных <br>
+                                дней отпуска
+                            </div>
+                        </div>
+                        <div class="payoff-example__view">Посмотреть пример</div>
+                    </div>
+                    <div class="payoff-example__example">
+                        Работник устроился 12&nbsp;января 2015&nbsp;года, а&nbsp;его последний день
+                        работы&nbsp;&mdash; 29&nbsp;мая. <br>
+                        Оклад&nbsp;&mdash; 30&nbsp;000 рублей в&nbsp;месяц. <br><br>
+
+                        Расчетный период: 12&nbsp;января&nbsp;&mdash; 30&nbsp;апреля 2015&nbsp;года. <br><br>
+
+                        Расчетное количество календарных дней считаем отдельно по&nbsp;полным <br>
+                        и&nbsp;неполным месяцам, а&nbsp;затем складываем. <br><br>
+
+                        За&nbsp;февраль, март, апрель&nbsp;&mdash; 87,90&nbsp;дн
+                        (29,3&nbsp;дн/мес x&nbsp;3&nbsp;мес). <br>
+                        Январь&nbsp;&mdash; 18,9032&nbsp;дн (29,3&nbsp;дн/мес : 31&nbsp;дн x&nbsp;20&nbsp;дн). <br>
+                        Итого: <span class="payoff-example__mark">106,8033</span>
+                        календарных дня в&nbsp;расчетном периоде. <br><br>
+
+                        Начисления за&nbsp;расчетный период: <span class="payoff-example__mark">120&nbsp;000 руб</span>
+                        (30&nbsp;000 руб x&nbsp;4&nbsp;мес) <br><br>
+
+                        Сумма компенсации = <span class="payoff-example__mark">13 482,74 руб</span>
+                        (120&nbsp;000 руб : 106,8032&nbsp;дн x&nbsp;12&nbsp;дн компенсации за&nbsp;отпуск).
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Рассчитайте компенсацию -->
-        <div class="otpusk-calculate">
-            <div class="otpusk-wrapper">
-                <div class="otpusk-calculate__title">
+        <div class="payoff-calculate">
+            <div class="payoff-wrapper">
+                <div class="payoff-calculate__title">
                     Рассчитайте компенсацию <br>
                     за неиспользованный отпуск <br>
                     в Программе Главбух
                 </div>
-                <div class="otpusk-calculate__description">
+                <div class="payoff-calculate__description">
                     Онлайн-сервис определит сумму компенсации и предоставит <br>
                     подробное объяснение расчета. Так же, как в примере.
                 </div>
-                <img class="otpusk-calculate__pic" src="build/img/otpusk-calculate/pic.png" />
+                <img class="payoff-calculate__pic" src="build/img/payoff-calculate/pic.png" />
             </div>
         </div>
 
         <!-- Попробовать бесплатно -->
-        <div class="otpusk-try">
-            <button type="button" class="otpusk-button">
-                <span class="otpusk-button__text">Попробовать бесплатно</span>
+        <div class="payoff-try">
+            <button type="button" class="payoff-button">
+                <span class="payoff-button__text">Попробовать бесплатно</span>
             </button>
         </div>
 
         <!-- Да она просто робот -->
-        <div class="otpusk-ai">
-            <div class="otpusk-wrapper">
-                <div class="otpusk-ai__title">
+        <div class="payoff-ai">
+            <div class="payoff-wrapper">
+                <div class="payoff-ai__title">
                     Программа Главбух сама считает <br>
                     количество дней отпуска сотрудника
                 </div>
-                <div class="otpusk-ai__description">
+                <div class="payoff-ai__description">
                     Один раз заполняете информацию о работнике. Пока сотрудник работает — в любой момент <br>
                     это число можно посмотреть на странице сотрудника, во вкладке «Отпуск»
                 </div>
-                <img src="build/img/otpusk-ai/pic.png" class="otpusk-ai__pic" />
+                <img src="build/img/payoff-ai/pic.png" class="payoff-ai__pic" />
             </div>
         </div>
 
         <!-- Увольнение -->
-        <div class="otpusk-annotate">
-            <div class="otpusk-wrapper">
-                <div class="otpusk-annotate__part">
-                    <div class="otpusk-annotate__content">
-                        <div class="otpusk-annotate__main">
+        <div class="payoff-annotate">
+            <div class="payoff-wrapper">
+                <div class="payoff-annotate__part">
+                    <div class="payoff-annotate__content">
+                        <div class="payoff-annotate__main">
                             При увольнении программа сразу же сообщит <br>
                             количество дней компенсации и суммы выплат: <br>
                             компенсации за отпуск и зарплаты за остаток <br>
                             месяца.
                         </div>
-                        <div class="otpusk-annotate__text">
+                        <div class="payoff-annotate__text">
                             По умолчанию сервис предложит округлить дни до целого <br>
                             значения. А если нужно, на лету пересчитает сумму <br>
                             компенсации из фактического количества дней.
                         </div>
-                        <img src="build/img/otpusk-annotate/eye.png" />
+                        <img src="build/img/payoff-annotate/eye.png" />
                     </div>
                 </div>
-                <div class="otpusk-annotate__part">
-                    <img src="build/img/otpusk-annotate/dismissal.png" class="otpusk-annotate__pic" />
+                <div class="payoff-annotate__part">
+                    <img src="build/img/payoff-annotate/dismissal.png" class="payoff-annotate__pic" />
                 </div>
             </div>
         </div>
 
         <!-- Детали -->
-        <div class="otpusk-annotate otpusk-annotate_white">
-            <div class="otpusk-wrapper">
-                <div class="otpusk-annotate__part">
-                    <img src="build/img/otpusk-annotate/details.png" class="otpusk-annotate__pic" />
+        <div class="payoff-annotate payoff-annotate_white">
+            <div class="payoff-wrapper">
+                <div class="payoff-annotate__part">
+                    <img src="build/img/payoff-annotate/details.png" class="payoff-annotate__pic" />
                 </div>
-                <div class="otpusk-annotate__part">
-                    <div class="otpusk-annotate__content otpusk-annotate__content_right">
-                        <div class="otpusk-annotate__main">
+                <div class="payoff-annotate__part">
+                    <div class="payoff-annotate__content payoff-annotate__content_right">
+                        <div class="payoff-annotate__main">
                             Программа подробно объяснит расчет <br>
                             компенсации за отпуск
                         </div>
-                        <div class="otpusk-annotate__text">
+                        <div class="payoff-annotate__text">
                             В записке-расчете справки Т-61, которую программа <br>
                             заполняет при оформлении увольнения.
                         </div>
@@ -268,101 +326,117 @@
         </div>
 
         <!-- Листок сотрудника -->
-        <div class="otpusk-annotate">
-            <div class="otpusk-wrapper">
-                <div class="otpusk-annotate__part">
-                    <div class="otpusk-annotate__content otpusk-annotate__content_last">
-                        <div class="otpusk-annotate__main">
+        <div class="payoff-annotate">
+            <div class="payoff-wrapper">
+                <div class="payoff-annotate__part">
+                    <div class="payoff-annotate__content payoff-annotate__content_last">
+                        <div class="payoff-annotate__main">
                             Программа перенесет сумму компенсации <br>
                             за отпуск в расчетный листок сотрудника
                         </div>
-                        <div class="otpusk-annotate__text">
+                        <div class="payoff-annotate__text">
                             Все выплаты работнику за месяц: компенсация, <br>
                             зарплата за остаток месяца, взносы и НДФЛ.
                         </div>
                     </div>
                 </div>
-                <div class="otpusk-annotate__part">
-                    <img src="build/img/otpusk-annotate/list.png" class="otpusk-annotate__pic" />
+                <div class="payoff-annotate__part">
+                    <img src="build/img/payoff-annotate/list.png" class="payoff-annotate__pic" />
                 </div>
             </div>
         </div>
 
         <!-- И главное! -->
-        <div class="otpusk-main">
-            <div class="otpusk-wrapper">
-                <div class="otpusk-main__title">И, главное!</div>
-                <div class="otpusk-main__description">
+        <div class="payoff-main">
+            <div class="payoff-wrapper">
+                <div class="payoff-main__title">И, главное!</div>
+                <div class="payoff-main__description">
                     Как только отчетный период закончится, Программа Главбух полностью заполнит <br>
                     4 ФСС и РСВ-1 и перенесет все суммы выплат в нужные строки отчетности.
                 </div>
-                <i class="otpusk-main__icon"></i>
+                <i class="payoff-main__icon"></i>
             </div>
         </div>
 
         <!-- Попробовать бесплатно -->
-        <div class="otpusk-try">
-            <button type="button" class="otpusk-button">
-                <span class="otpusk-button__text">Попробовать бесплатно</span>
+        <div class="payoff-try">
+            <button type="button" class="payoff-button">
+                <span class="payoff-button__text">Попробовать бесплатно</span>
             </button>
         </div>
 
         <!-- Что умеет программа -->
-        <div class="otpusk-soft">
-            <div class="otpusk-wrapper">
-                <div class="otpusk-soft__title">Что еще умеет Программа Главбух</div>
-                <div class="otpusk-soft__list">
-                    <div class="otpusk-soft__item otpusk-soft__item_up">
-                        <div class="otpusk-soft__icon">
-                            <img src="build/img/otpusk-soft/rouble.png" class="otpusk-soft__pic" />
+        <div class="payoff-soft">
+            <div class="payoff-wrapper">
+                <div class="payoff-soft__title">Что еще умеет Программа Главбух</div>
+                <div class="payoff-soft__list">
+                    <div class="payoff-soft__item payoff-soft__item_up">
+                        <div class="payoff-soft__icon">
+                            <img src="build/img/payoff-soft/rouble.png" class="payoff-soft__pic" />
                         </div>
-                        <div class="otpusk-soft__text">
+                        <div class="payoff-soft__text">
                             Считать зарплату, командировочные, <br>
                             больничные и остальные выплаты
                         </div>
                     </div>
-                    <div class="otpusk-soft__item otpusk-soft__item_up">
-                        <div class="otpusk-soft__icon">
-                            <img src="build/img/otpusk-soft/docs.png" class="otpusk-soft__pic" />
+                    <div class="payoff-soft__item payoff-soft__item_up">
+                        <div class="payoff-soft__icon">
+                            <img src="build/img/payoff-soft/docs.png" class="payoff-soft__pic" />
                         </div>
-                        <div class="otpusk-soft__text">
+                        <div class="payoff-soft__text">
                             Заполнять кадровые документы <br>
                             в момент расчета
                         </div>
                     </div>
-                    <div class="otpusk-soft__item">
-                        <div class="otpusk-soft__icon">
-                            <img src="build/img/otpusk-soft/graph.png" class="otpusk-soft__pic" />
+                    <div class="payoff-soft__item">
+                        <div class="payoff-soft__icon">
+                            <img src="build/img/payoff-soft/graph.png" class="payoff-soft__pic" />
                         </div>
-                        <div class="otpusk-soft__text">
+                        <div class="payoff-soft__text">
                             Начислять НДФЛ, взносы и готовить <br>
                             отчетность: 4-ФСС, РСВ-1, 2-НДФЛ
                         </div>
                     </div>
-                    <div class="otpusk-soft__item">
-                        <div class="otpusk-soft__icon">
-                            <img src="build/img/otpusk-soft/scope.png" class="otpusk-soft__pic" />
+                    <div class="payoff-soft__item">
+                        <div class="payoff-soft__icon">
+                            <img src="build/img/payoff-soft/scope.png" class="payoff-soft__pic" />
                         </div>
-                        <div class="otpusk-soft__text">
+                        <div class="payoff-soft__text">
                             Давать рекомендации по зарплатному <br>
                             и кадровому учету
                         </div>
                     </div>
                 </div>
-                <button type="button" class="otpusk-button otpusk-button_green">
-                    <span class="otpusk-button__text">Попробовать бесплатно</span>
+                <button type="button" class="payoff-button payoff-button_green">
+                    <span class="payoff-button__text">Попробовать бесплатно</span>
                 </button>
             </div>
         </div>
 
         <!-- Подвал -->
-        <div class="otpusk-footer">
-            <div class="otpusk-wrapper">
-                <div class="otpusk-footer__logo"><img src="build/img/otpusk-footer/logo.png" /></div>
-                <div class="otpusk-footer__phone">8 495 225-23-95</div>
-                <div class="otpusk-footer__copyright">© Актион-диджитал, 2013–2015</div>
+        <div class="payoff-footer">
+            <div class="payoff-wrapper">
+                <div class="payoff-footer__logo"><img src="build/img/payoff-footer/logo.png" /></div>
+                <div class="payoff-footer__phone">8 495 225-23-95</div>
+                <div class="payoff-footer__copyright">© Актион-диджитал, 2013–2015</div>
             </div>
         </div>
     </div>
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        (function ($) {
+            var example = $('.payoff-example__view');
+
+            example.on('click', toggleExample)
+
+            function toggleExample (e) {
+                var text = this.textContent;
+                this.textContent = text === 'Посмотреть пример' ? 'Скрыть пример' : 'Посмотреть пример';
+                $(this).parent().next().toggleClass('payoff-example__example_visible');
+            }
+
+        }($));
+    </script>
 </body>
 </html>
